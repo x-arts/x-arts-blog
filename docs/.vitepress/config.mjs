@@ -1,0 +1,74 @@
+import { defineConfig } from 'vitepress';
+
+export default defineConfig({
+  title: 'X-Arts 知识库',
+  description: '一个面向知识管理与沉淀的博客',
+  lang: 'zh-CN',
+  lastUpdated: true,
+  cleanUrls: true,
+  themeConfig: {
+    logo: '/logo.svg',
+    nav: [
+      { text: '首页', link: '/' },
+      { text: '开始', link: '/guide/getting-started' },
+      { text: 'AI 笔记', link: '/ai/llm-overview' },
+      { text: '工具实践', link: '/tools/workflow' },
+      { text: '归档', link: '/notes/archive' }
+    ],
+    search: {
+      provider: 'local'
+    },
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/' }
+    ],
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2026 X-Arts'
+    },
+    sidebar: {
+      '/guide/': [
+        {
+          text: '入门',
+          items: [
+            { text: '快速开始', link: '/guide/getting-started' },
+            { text: '写作规范', link: '/guide/writing-style' }
+          ]
+        }
+      ],
+      '/ai/': [
+        {
+          text: 'AI 体系',
+          items: [
+            { text: 'LLM 概览', link: '/ai/llm-overview' },
+            { text: 'Prompt 模板', link: '/ai/prompt-patterns' }
+          ]
+        }
+      ],
+      '/tools/': [
+        {
+          text: '工具实践',
+          items: [
+            { text: '效率工作流', link: '/tools/workflow' },
+            { text: '自动化脚本', link: '/tools/automation' }
+          ]
+        }
+      ],
+      '/notes/': [
+        {
+          text: '归档',
+          items: [
+            { text: '文章归档', link: '/notes/archive' }
+          ]
+        }
+      ]
+    },
+    docFooter: {
+      prev: '上一篇',
+      next: '下一篇'
+    },
+    outline: {
+      level: [2, 3, 4],
+      label: '目录'
+    }
+  }
+});
