@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress';
 
 export default defineConfig({
+  base: '/x-arts-blog/',
   title: 'X-Arts 知识库',
   description: '一个面向知识管理与沉淀的博客',
   lang: 'zh-CN',
