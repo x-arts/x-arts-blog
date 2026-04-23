@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress';
+import { getSidebarItems } from './sidebar.mjs';
 
 export default defineConfig({
   base: '/x-arts-blog/',
@@ -12,7 +13,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '开始', link: '/guide/getting-started' },
-      { text: 'AI 笔记', link: '/ai/llm-overview' },
+      { text: 'AI 笔记', link: '/ai/' },
       { text: 'Java 程序员', link: '/tools/workflow' },
       { text: '读书笔记', link: '/notes/archive' }
     ],
@@ -40,16 +41,17 @@ export default defineConfig({
         {
           text: 'LLM',
           collapsed: true,
-          items: [
-            { text: 'LLM 概览', link: '/ai/llm/llm-overview' }
-          ]
+          items: getSidebarItems('ai/llm')
         },
         {
           text: '提示词工程',
           collapsed: true,
-          items: [
-            { text: 'Prompt 模板', link: '/ai/prompt/prompt-patterns' }
-          ]
+          items: getSidebarItems('ai/prompt')
+        },
+        {
+          text: 'AI agent',
+          collapsed: true,
+          items: getSidebarItems('ai/agent')
         }
       ],
       '/tools/': [
