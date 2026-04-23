@@ -8,3 +8,4 @@
 - [Prompt 模板](/ai/prompt-patterns)
 - [效率工作流](/tools/workflow)
 - [自动化脚本](/tools/automation)
+

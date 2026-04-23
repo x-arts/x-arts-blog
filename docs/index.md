@@ -2,19 +2,16 @@
 layout: home
 
 hero:
-  name: "X-Arts 知识库"
-  text: "结构化沉淀你的知识与实践"
-  tagline: "围绕 AI、工具、方法论，持续输出高质量内容"
+  name: "X-Arts 数字花园"
+  text: "结构化沉淀知识与实践"
+  tagline: "围绕 AI、工程方法论、工具、读书笔记，持续输出高质量内容"
   image:
-    src: /logo.svg
+    src: /logo.png
     alt: X-Arts
   actions:
     - theme: brand
       text: 开始阅读
       link: /guide/getting-started
-    - theme: alt
-      text: 查看归档
-      link: /notes/archive
 
 features:
   - icon: 📚

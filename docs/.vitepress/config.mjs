@@ -2,19 +2,19 @@ import { defineConfig } from 'vitepress';
 
 export default defineConfig({
   base: '/x-arts-blog/',
-  title: 'X-Arts 知识库',
+  title: 'X-Arts 数字乐园',
   description: '一个面向知识管理与沉淀的博客',
   lang: 'zh-CN',
   lastUpdated: true,
   cleanUrls: true,
   themeConfig: {
-    logo: '/logo.svg',
+    logo: '/logo.png',
     nav: [
       { text: '首页', link: '/' },
       { text: '开始', link: '/guide/getting-started' },
       { text: 'AI 笔记', link: '/ai/llm-overview' },
-      { text: '工具实践', link: '/tools/workflow' },
-      { text: '归档', link: '/notes/archive' }
+      { text: 'Java 程序员', link: '/tools/workflow' },
+      { text: '读书笔记', link: '/notes/archive' }
     ],
     search: {
       provider: 'local'
