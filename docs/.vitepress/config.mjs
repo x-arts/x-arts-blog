@@ -38,10 +38,17 @@ export default defineConfig({
       ],
       '/ai/': [
         {
-          text: 'AI 体系',
+          text: 'LLM',
+          collapsed: true,
           items: [
-            { text: 'LLM 概览', link: '/ai/llm-overview' },
-            { text: 'Prompt 模板', link: '/ai/prompt-patterns' }
+            { text: 'LLM 概览', link: '/ai/llm/llm-overview' }
+          ]
+        },
+        {
+          text: '提示词工程',
+          collapsed: true,
+          items: [
+            { text: 'Prompt 模板', link: '/ai/prompt/prompt-patterns' }
           ]
         }
       ],
