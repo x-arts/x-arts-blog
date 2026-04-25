@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "X-Arts 数字花园"
   text: "结构化沉淀知识与实践"
-  tagline: "围绕 AI、工程方法论、工具、读书笔记，持续输出高质量内容"
+  tagline: "围绕 AI、工程方法论、工具、读书笔记，分享自己的经验与思考"
   image:
     src: /logo.png
     alt: X-Arts

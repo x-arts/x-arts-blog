@@ -11,7 +11,3 @@
 
 把新的 Markdown 文件放到对应目录即可自动出现在左侧目录中。
 
-```text
-docs/ai/llm/new-topic.md
-docs/ai/prompt/new-prompt-pattern.md
-```

@@ -14,7 +14,7 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '开始', link: '/guide/getting-started' },
       { text: 'AI 笔记', link: '/ai/' },
-      { text: 'Java 程序员', link: '/tools/workflow' },
+      { text: 'Java 程序员', link: '/java/' },
       { text: '读书笔记', link: '/notes/archive' }
     ],
     search: {
@@ -54,13 +54,16 @@ export default defineConfig({
           items: getSidebarItems('ai/agent')
         }
       ],
-      '/tools/': [
+      '/java/': [
         {
-          text: '工具实践',
-          items: [
-            { text: '效率工作流', link: '/tools/workflow' },
-            { text: '自动化脚本', link: '/tools/automation' }
-          ]
+          text: '架构说',
+          collapsed: true,
+          items: getSidebarItems('java/architecture')
+        },
+        {
+          text: 'Java 语言',
+          collapsed: true,
+          items: getSidebarItems('java/javalanguage')
         }
       ],
       '/notes/': [

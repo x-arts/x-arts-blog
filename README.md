@@ -36,4 +36,5 @@ npm run docs:preview
 
 ## 部署
 
-项目通过 GitHub Actions 构建并部署到 GitHub Pages。推送到 `master` 分支后，`.github/workflows/deploy.yml` 会自动执行构建和发布流程。
+项目通过 GitHub Actions 构建并部署到 GitHub Pages。推送到 `master` 分支后，`.github/workflows/deploy.yml` 
+会自动执行构建和发布流程。
