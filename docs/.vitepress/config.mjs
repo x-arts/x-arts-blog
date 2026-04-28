@@ -80,7 +80,7 @@ export default defineConfig({
       next: '下一篇'
     },
     outline: {
-      level: [2, 3, 4],
+      level: [1, 4],
       label: '目录'
     }
   }
